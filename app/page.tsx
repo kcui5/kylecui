@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const bodyClass =
   "max-w-lg text-left font-[family-name:var(--font-sans)] text-[clamp(0.75rem,2vw,1rem)] leading-relaxed text-muted-foreground";
@@ -61,7 +60,7 @@ export default function Page() {
                 href="mailto:kyle@kylecui.com"
                 className="underline underline-offset-4"
               >
-                kyle@kylecui.com
+                kyle@kylecui.dev
               </a>
               <span className="mx-3">|</span>
               <a
