@@ -76,7 +76,7 @@ export default function Page() {
                 href="https://open.spotify.com/user/31tcd5mcobwwqvhdaxdbfsnupupe?si=f634683176eb4511"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline underline-offset-4"
+                className="whitespace-nowrap underline underline-offset-4"
               >
                 i love music follow my spotify lol
               </a>
