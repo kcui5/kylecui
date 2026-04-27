@@ -2,6 +2,7 @@
 
 import * as React from "react"
 import { ThemeProvider as NextThemesProvider, useTheme } from "next-themes"
+import posthog from "posthog-js"
 
 function ThemeProvider({
   children,
@@ -55,7 +56,9 @@ function ThemeHotkey() {
         return
       }
 
-      setTheme(resolvedTheme === "dark" ? "light" : "dark")
+      const nextTheme = resolvedTheme === "dark" ? "light" : "dark"
+      setTheme(nextTheme)
+      posthog.capture("theme_toggled", { theme: nextTheme })
     }
 
     window.addEventListener("keydown", onKeyDown)

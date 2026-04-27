@@ -1,9 +1,11 @@
-import Image from "next/image";
+import Image from "next/image"
+
+import { TrackedLink } from "@/components/tracked-link"
 
 const bodyClass =
-  "max-w-lg font-[family-name:var(--font-sans)] text-[clamp(0.875rem,2vw,1rem)] leading-relaxed text-muted-foreground";
+  "max-w-lg font-[family-name:var(--font-sans)] text-[clamp(0.875rem,2vw,1rem)] leading-relaxed text-muted-foreground"
 
-const linkClass = "underline underline-offset-4";
+const linkClass = "underline underline-offset-4"
 
 export default function Page() {
   return (
@@ -34,26 +36,27 @@ export default function Page() {
           </p>
           <p className={bodyClass}>
             then i built product and owned growth at{" "}
-            <a
+            <TrackedLink
               href="https://fish.audio"
               target="_blank"
               rel="noopener noreferrer"
               className={linkClass}
+              destination="fish_audio"
             >
               Fish Audio
-            </a>
+            </TrackedLink>
             , taking us from 3M to 12M ARR during my four months there.
           </p>
           <p className={bodyClass}>
             A thesis of mine is that the value of most engineering is going to
-            zero, what matters much more is growth -- whether you can get
-            people to actually care about what you&apos;re building. Otherwise
-            building is just intellectual masturbation. I&apos;m obsessed with
+            zero, what matters much more is growth -- whether you can get people
+            to actually care about what you&apos;re building. Otherwise building
+            is just intellectual masturbation. I&apos;m obsessed with
             systematizing growth now, specifically in consumer applications.
           </p>
           <p className={bodyClass}>
-            I&apos;m 23 now, it&apos;s the year of the fire horse, and
-            i&apos;m not stopping
+            I&apos;m 23 now, it&apos;s the year of the fire horse, and i&apos;m
+            not stopping
           </p>
           <p
             className={`${bodyClass} flex flex-wrap items-center gap-x-3 gap-y-1`}
@@ -62,23 +65,25 @@ export default function Page() {
               kyle@kylecui.dev
             </a>
             <span aria-hidden="true">|</span>
-            <a
+            <TrackedLink
               href="https://x.com/kile_sway"
               target="_blank"
               rel="noopener noreferrer"
               className={linkClass}
+              destination="twitter"
             >
               @kile_sway
-            </a>
+            </TrackedLink>
             <span aria-hidden="true">|</span>
-            <a
+            <TrackedLink
               href="https://open.spotify.com/user/31tcd5mcobwwqvhdaxdbfsnupupe?si=f634683176eb4511"
               target="_blank"
               rel="noopener noreferrer"
               className={`whitespace-nowrap ${linkClass}`}
+              destination="spotify"
             >
               i love music follow my spotify lol
-            </a>
+            </TrackedLink>
           </p>
         </div>
       </div>
@@ -93,5 +98,5 @@ export default function Page() {
         />
       </div>
     </main>
-  );
+  )
 }
