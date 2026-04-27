@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google"
+import { Geist, Geist_Mono, Mea_Culpa, Press_Start_2P } from "next/font/google"
 
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -11,6 +11,18 @@ const fontMono = Geist_Mono({
   variable: "--font-mono",
 })
 
+const meaCulpa = Mea_Culpa({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-mea-culpa",
+})
+
+const pressStart = Press_Start_2P({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-press-start",
+})
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -20,7 +32,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={cn("antialiased", fontMono.variable, "font-sans", geist.variable)}
+      className={cn("antialiased", fontMono.variable, "font-sans", geist.variable, meaCulpa.variable, pressStart.variable)}
     >
       <body>
         <ThemeProvider>{children}</ThemeProvider>
