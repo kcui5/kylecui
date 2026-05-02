@@ -78,6 +78,7 @@ const personSchema = {
       ],
       sameAs: [
         "https://x.com/kile_sway",
+        "https://github.com/kcui5",
         "https://open.spotify.com/user/31tcd5mcobwwqvhdaxdbfsnupupe",
       ],
       email: "mailto:kyle@kylecui.dev",

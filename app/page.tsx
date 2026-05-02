@@ -79,13 +79,23 @@ export default function Page() {
             </TrackedLink>
             <span aria-hidden="true">|</span>
             <TrackedLink
+              href="https://github.com/kcui5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClass}
+              destination="github"
+            >
+              github
+            </TrackedLink>
+            <span aria-hidden="true">|</span>
+            <TrackedLink
               href="https://open.spotify.com/user/31tcd5mcobwwqvhdaxdbfsnupupe?si=f634683176eb4511"
               target="_blank"
               rel="noopener noreferrer"
               className={`whitespace-nowrap ${linkClass}`}
               destination="spotify"
             >
-              i love music follow my spotify lol
+              i love music
             </TrackedLink>
           </p>
         </div>
