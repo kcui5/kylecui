@@ -11,7 +11,10 @@ export default function Page() {
   return (
     <main className="stone-wash grid min-h-svh grid-cols-1 overflow-x-hidden lg:grid-cols-2">
       <div className="px-[clamp(2.5rem,5vw,5rem)] pt-[clamp(2.5rem,5vh,4rem)]">
-        <h1 className="flex items-baseline gap-0 text-foreground select-none">
+        <h1
+          aria-label="Kyle Cui"
+          className="flex items-baseline gap-0 text-foreground select-none"
+        >
           <span className="font-[family-name:var(--font-mea-culpa)] text-[clamp(4rem,15vw,10rem)] leading-none tracking-tight">
             K
           </span>
@@ -61,7 +64,7 @@ export default function Page() {
           <p
             className={`${bodyClass} flex flex-wrap items-center gap-x-3 gap-y-1`}
           >
-            <a href="mailto:kyle@kylecui.com" className={linkClass}>
+            <a href="mailto:kyle@kylecui.dev" className={linkClass}>
               kyle@kylecui.dev
             </a>
             <span aria-hidden="true">|</span>
