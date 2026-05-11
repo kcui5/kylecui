@@ -3,7 +3,7 @@ import Image from "next/image"
 import { TrackedLink } from "@/components/tracked-link"
 
 const bodyClass =
-  "max-w-lg font-[family-name:var(--font-sans)] text-[clamp(0.875rem,2vw,1rem)] leading-relaxed text-muted-foreground"
+  "max-w-lg font-[family-name:var(--font-sans)] text-[clamp(0.8rem,2vw,0.91rem)] leading-relaxed text-muted-foreground"
 
 const linkClass = "underline underline-offset-4"
 
@@ -15,13 +15,13 @@ export default function Page() {
           aria-label="Kyle Cui"
           className="flex items-baseline gap-0 text-foreground select-none"
         >
-          <span className="font-[family-name:var(--font-mea-culpa)] text-[clamp(4rem,15vw,10rem)] leading-none tracking-tight">
+          <span className="font-[family-name:var(--font-mea-culpa)] text-[clamp(4rem,15vw,8rem)] leading-none tracking-tight">
             K
           </span>
-          <span className="ml-[0.3em] font-[family-name:var(--font-press-start)] text-[clamp(1rem,4vw,2.2rem)] leading-none">
+          <span className="ml-[0.3em] font-[family-name:var(--font-press-start)] text-[clamp(1rem,4vw,1.7rem)] leading-none">
             yle
           </span>
-          <span className="ml-[clamp(0.6rem,3vw,2rem)] font-[family-name:var(--font-press-start)] text-[clamp(1rem,4vw,2.2rem)] leading-none">
+          <span className="ml-[clamp(0.6rem,3vw,2rem)] font-[family-name:var(--font-press-start)] text-[clamp(1rem,4vw,1.7rem)] leading-none">
             Cui
           </span>
         </h1>
