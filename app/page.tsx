@@ -3,7 +3,7 @@ import Image from "next/image"
 import { TrackedLink } from "@/components/tracked-link"
 
 const bodyClass =
-  "max-w-lg font-[family-name:var(--font-sans)] text-[clamp(0.8rem,2vw,0.91rem)] leading-relaxed text-muted-foreground"
+  "max-w-sm font-[family-name:var(--font-sans)] text-[clamp(0.8rem,2vw,0.91rem)] leading-relaxed tracking-tight text-muted-foreground"
 
 const linkClass = "underline underline-offset-4"
 
@@ -26,7 +26,7 @@ export default function Page() {
           </span>
         </h1>
 
-        <div className="mt-[clamp(1.5rem,4vh,3rem)] flex flex-col gap-[clamp(0.5rem,2vh,1rem)]">
+        <div className="mt-[clamp(1.5rem,4vh,3rem)] flex flex-col gap-[clamp(0.35rem,1.4vh,0.75rem)]">
           <p className={bodyClass}>Be undeniable.</p>
           <p className={bodyClass}>
             when i was 21 i graduated from UC Berkeley with a CS Honors and
