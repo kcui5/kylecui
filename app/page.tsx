@@ -39,6 +39,7 @@ export default function Page() {
             >
               Bonemeal
             </TrackedLink>
+            , where we just went 0 to 100k ARR in a month.
           </p>
           <p className={bodyClass}>
             before that, i built product and owned growth at{" "}
@@ -55,7 +56,7 @@ export default function Page() {
           </p>
           <p className={bodyClass}>
             before fish, i bootstrapped a startup that was
-            acquired by a frontier AI lab, but ultimately nobody cared about it.
+            acquired by a frontier AI lab
           </p>
           <p className={bodyClass}>
             i graduated from UC Berkeley with a CS and
