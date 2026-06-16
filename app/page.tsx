@@ -121,7 +121,7 @@ export default function Page() {
             fontFamily: "monospace",
             lineHeight: 1,
             whiteSpace: "pre",
-            fontSize: "clamp(2px, 0.7vw, 4px)",
+            fontSize: "clamp(2px, calc((100vw - 5rem) / 120), 4px)",
           }}
         />
         <Script src="/horse-anim.js" strategy="afterInteractive" />
