@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Script from "next/script"
 
 import { TrackedLink } from "@/components/tracked-link"
 
@@ -10,18 +10,18 @@ const linkClass = "underline underline-offset-4"
 export default function Page() {
   return (
     <main className="stone-wash grid min-h-svh grid-cols-1 overflow-x-hidden lg:grid-cols-2">
-      <div className="px-[clamp(2.5rem,5vw,5rem)] pt-[clamp(2.5rem,5vh,4rem)]">
+      <div className="px-[clamp(2.5rem,5vw,5rem)] pt-[clamp(2.5rem,5vh,4rem)] lg:pl-[clamp(5rem,10vw,12rem)]">
         <h1
           aria-label="Kyle Cui"
           className="flex items-baseline gap-0 text-foreground select-none"
         >
-          <span className="font-[family-name:var(--font-mea-culpa)] text-[clamp(4rem,15vw,8rem)] leading-none tracking-tight">
+          <span className="font-[family-name:var(--font-mea-culpa)] text-[clamp(3rem,11vw,6rem)] leading-none tracking-tight">
             K
           </span>
-          <span className="ml-[0.3em] font-[family-name:var(--font-press-start)] text-[clamp(1rem,4vw,1.7rem)] leading-none">
+          <span className="ml-[0.3em] font-[family-name:var(--font-press-start)] text-[clamp(0.75rem,3vw,1.25rem)] leading-none">
             yle
           </span>
-          <span className="ml-[clamp(0.6rem,3vw,2rem)] font-[family-name:var(--font-press-start)] text-[clamp(1rem,4vw,1.7rem)] leading-none">
+          <span className="ml-[clamp(0.6rem,3vw,2rem)] font-[family-name:var(--font-press-start)] text-[clamp(0.75rem,3vw,1.25rem)] leading-none">
             Cui
           </span>
         </h1>
@@ -29,16 +29,19 @@ export default function Page() {
         <div className="mt-[clamp(1.5rem,4vh,3rem)] flex flex-col gap-[clamp(0.35rem,1.4vh,0.75rem)]">
           <p className={bodyClass}>Be undeniable.</p>
           <p className={bodyClass}>
-            when i was 21 i graduated from UC Berkeley with a CS Honors and
-            Physics double degree
+            currently co-founding{" "}
+            <TrackedLink
+              href="https://bonemeal.ai"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClass}
+              destination="bonemeal_ai"
+            >
+              Bonemeal
+            </TrackedLink>
           </p>
           <p className={bodyClass}>
-            then i bootstrapped a startup in Antler&apos;s Residency program
-            that did a little more than 3k in revenue, but ultimately nobody
-            cared about it.
-          </p>
-          <p className={bodyClass}>
-            then i built product and owned growth at{" "}
+            before that, i built product and owned growth at{" "}
             <TrackedLink
               href="https://fish.audio"
               target="_blank"
@@ -51,9 +54,19 @@ export default function Page() {
             , taking us from 3M to 12M ARR during my four months there.
           </p>
           <p className={bodyClass}>
+            before fish, i bootstrapped a startup that was
+            acquired by a frontier AI lab, but ultimately nobody cared about it.
+          </p>
+          <p className={bodyClass}>
+            i graduated from UC Berkeley with a CS and
+            Physics double degree
+          </p>
+          
+          
+          <p className={bodyClass}>
             A thesis of mine is that the value of most engineering is going to
             zero, what matters much more is growth -- whether you can get people
-            to actually care about what you&apos;re building. Otherwise building
+            to actually care about what you&apos;re building. Otherwise, building
             is just intellectual masturbation. I&apos;m obsessed with
             systematizing growth now, specifically in consumer applications.
           </p>
@@ -101,14 +114,17 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center p-[clamp(1.5rem,5vw,3rem)]">
-        <Image
-          src="/bracelet.webp"
-          alt="Red string bracelet"
-          width={500}
-          height={500}
-          className="h-auto w-[clamp(10rem,25vw,20rem)] select-none"
+      <div className="flex items-center justify-center p-[clamp(1.5rem,5vw,3rem)] lg:items-end lg:justify-end">
+        <pre
+          id="horse-anim"
+          style={{
+            fontFamily: "monospace",
+            lineHeight: 1,
+            whiteSpace: "pre",
+            fontSize: "4px",
+          }}
         />
+        <Script src="/horse-anim.js" strategy="afterInteractive" />
       </div>
     </main>
   )
