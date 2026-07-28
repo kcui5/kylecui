@@ -28,8 +28,9 @@ export default function Page() {
 
         <div className="mt-[clamp(1.5rem,4vh,3rem)] flex flex-col gap-[clamp(0.35rem,1.4vh,0.75rem)]">
           <p className={bodyClass}>Be undeniable.</p>
+          <p className={bodyClass}>currently exploring AI consumer</p>
           <p className={bodyClass}>
-            currently co-founding{" "}
+            previously co-founded{" "}
             <TrackedLink
               href="https://bonemeal.ai"
               target="_blank"
@@ -39,7 +40,7 @@ export default function Page() {
             >
               Bonemeal
             </TrackedLink>
-            , where we just went 0 to 100k ARR in a month.
+            , where we went 0 to 100k ARR in a month.
           </p>
           <p className={bodyClass}>
             before that, i built product and owned growth at{" "}

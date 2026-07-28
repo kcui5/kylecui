@@ -7,7 +7,7 @@ import { cn } from "@/lib/utils";
 
 const siteUrl = "https://kylecui.dev"
 const siteDescription =
-  "Kyle Cui — UC Berkeley CS Honors + Physics, ex-Fish Audio (3M → 12M ARR in four months). Obsessed with systematizing growth for consumer applications."
+  "Kyle Cui — Former founder, 1x exit, another 0 to 100K ARR in a month. Prev. founding eng at Fish Audio (3M → 12M ARR in four months). UC Berkeley CS Honors + Physics. Obsessed with systematizing growth for consumer applications."
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
