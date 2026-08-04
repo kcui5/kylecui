@@ -78,7 +78,7 @@ export default function Page() {
             to architect beautiful core systems that enable delightful products.
           </p>
           <p className={bodyClass}>
-            I&apos;m 23 now, it&apos;s the year of the fire horse, and i&apos;m
+            It&apos;s the year of the fire horse, and i&apos;m
             not stopping
           </p>
           <p
