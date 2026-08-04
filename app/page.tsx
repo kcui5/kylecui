@@ -74,6 +74,10 @@ export default function Page() {
             to build beautiful systems and products built on top rather than slop.
           </p>
           <p className={bodyClass}>
+            I'm now obsesssed with using my experience in growth and building for the user
+            to architect beautiful core systems that enable delightful products.
+          </p>
+          <p className={bodyClass}>
             I&apos;m 23 now, it&apos;s the year of the fire horse, and i&apos;m
             not stopping
           </p>
