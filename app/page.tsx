@@ -28,7 +28,7 @@ export default function Page() {
 
         <div className="mt-[clamp(1.5rem,4vh,3rem)] flex flex-col gap-[clamp(0.35rem,1.4vh,0.75rem)]">
           <p className={bodyClass}>Be undeniable.</p>
-          <p className={bodyClass}>currently exploring AI consumer</p>
+          <p className={bodyClass}>currently exploring</p>
           <p className={bodyClass}>
             previously co-founded{" "}
             <TrackedLink
@@ -66,11 +66,12 @@ export default function Page() {
           
           
           <p className={bodyClass}>
-            A thesis of mine is that the value of most engineering is going to
-            zero, what matters much more is growth -- whether you can get people
-            to actually care about what you&apos;re building. Otherwise, building
-            is just intellectual masturbation. I&apos;m obsessed with
-            systematizing growth now, specifically in consumer applications.
+            A thesis of mine is that the value of most product engineering is going to
+            zero, what matters much more is 1.&nbsp;growth and 2.&nbsp;architecting
+            reliable,
+            well-designed, lasting systems. In other words, whether you can get people
+            to actually care about what you&apos;re building and whether you can steer AI
+            to build beautiful systems and products built on top rather than slop.
           </p>
           <p className={bodyClass}>
             I&apos;m 23 now, it&apos;s the year of the fire horse, and i&apos;m
