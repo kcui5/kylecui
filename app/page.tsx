@@ -121,7 +121,18 @@ export default function Page() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center p-[clamp(1.5rem,5vw,3rem)] lg:items-end lg:justify-end">
+      <div className="flex flex-col items-center justify-center gap-[clamp(0.75rem,2vh,1.5rem)] p-[clamp(1.5rem,5vw,3rem)] lg:items-end lg:justify-end">
+        <p className={bodyClass}>
+          <TrackedLink
+            href="https://gesturesynthtouch.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkClass}
+            destination="gesture_synth"
+          >
+            gesture synth
+          </TrackedLink>
+        </p>
         <pre
           id="horse-anim"
           style={{
