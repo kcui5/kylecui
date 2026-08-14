@@ -57,7 +57,7 @@ export default function Page() {
           </p>
           <p className={bodyClass}>
             before fish, i bootstrapped a startup that was
-            acquired by a frontier AI lab
+            acquired by a frontier AI lab based in NYC
           </p>
           <p className={bodyClass}>
             i graduated from UC Berkeley with a CS and
